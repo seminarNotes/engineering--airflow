@@ -1,13 +1,14 @@
 # ElasticSearch Setup 
 최초 작성일 : 2023-12-27  
-마지막 수정일 : 2023-12-27
+마지막 수정일 : 2023-12-29
   
 ## 0. Overview
 Windows 환경에서 ElasticSearch를 설치하고, 세팅하는 과정을 기록한다.
 
 ## Table of Contents
 1. [Download setup file](#1.-Download-setup-file)
-2. [Installation with setup file](#1.-Installation-with-setup-file)
+2. [Install with setup file](#2.-Install-with-setup-file)
+3. [Execute_ElasticSearch](#3.-Execute-ElasticSearch)
 
 
 
@@ -34,7 +35,7 @@ C:\ELK\elasticsearch
 C:\ELK\kibana
 
 
-## 2. Installation with setup file
+## 2. Install with setup file
 Visual Studio Code를 이용해서 설치를 완료한다. 명령 프롬포트를 실행해서 작업 디렉토리를 열고(최상위 폴더를 ELK로 하고), Visual Stuido Code를 실행한다.
 ```console
 C:\Users\seminarNotes>CD C:\ELK
@@ -84,4 +85,14 @@ server.host: localhost
 server.publicBaseUrl: "http://localhost:5601"
 elasticsearch.hosts: ["http://localhost:9200"]
 ```
+
+
+## 3. Execute ElasticSearch
+설치된 elasticsearch와 kibana는 아래 batch파일을 터미널을 통해 실행한다.
+```console
+c:\ELK\elasticsearch\bin\elasticsearch.bat
+
+c:\ELK\kibana\bin\kibana.bat
+```
+설치와 실행을 점검하기 위해, elaticsearch는 http://localhost:9200  kibana는 http://localhost:5601에 접속해서 확인한다.
 
