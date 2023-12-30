@@ -94,5 +94,5 @@ c:\ELK\elasticsearch\bin\elasticsearch.bat
 
 c:\ELK\kibana\bin\kibana.bat
 ```
-설치와 실행을 점검하기 위해, elaticsearch는 http://localhost:9200  kibana는 http://localhost:5601에 접속해서 확인한다.
+설치와 실행을 점검하기 위해, elaticsearch는 http://localhost:9200 kibana는 http://localhost:5601 에 접속해서 확인한다.
 
