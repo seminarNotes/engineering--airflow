@@ -83,14 +83,12 @@
 
 
 #config/elasticsearch.yml
-cluster.name: woori-es
-node.name: woori-es-node01
+cluster.name: cluster-test
+node.name: cluster-test-node01
 
 path:
-  data: C:\ITStudy\ELK\elasticsearch\data
-  logs: C:\ITStudy\ELK\elasticsearch\logs  
-  # data: C:\ITStudy\03_elk\elasticsearch\data
-  # logs: C:\ITStudy\03_elk\elasticsearch\logs  
+  data: C:\ELK\elasticsearch\data
+  logs: C:\ELK\elasticsearch\logs  
 
 network.host: 127.0.0.1
 
