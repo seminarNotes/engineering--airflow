@@ -22,7 +22,7 @@ wsl --install
 ## 2. Install Docker Engine on WLS2
 wsl를 통해 home/user 디렉토리로 이동한 다음, 에러를 발생시키는 패키지를 먼저 삭제한다.
 ```console
-$ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
 
 설치 전, 설치된 패키지 목록을 최신 상태로 업데이트 한다.
